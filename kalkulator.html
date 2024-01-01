@@ -10,20 +10,46 @@
     <header id="nav-bar">
       <h4><div id="logos">welcome to katik</div></h4>
       <h4 class="header-text">
-        Hai, Welcome to " Katik " website <br />
-        disini kalian bisa melakukan perhitungan matematika, yaitu berupa bangun
-        datar segitiga disini, yang terdiri dari inputan pilihan yaitu luas dan
-        keliling segitiga
+        Hai, Welcome to " Katik " (Kalkulator Matematika)<br />
+        Di website disini kalian bisa melakukan perhitungan matematika, yaitu
+        berupa bangun datar segitiga disini, yang terdiri dari inputan pilihan
+        yaitu luas dan keliling segitiga sama sisi
       </h4>
-    </header>
-    <main>
       <div>
-        <img
-          src="images/cara-menentukan-sudut-segitiga-s-20230411025003.jpg"
-          alt=""
-        />
+        <img src="images/1704109821179.png" alt="" />
       </div>
-      <div></div>
+      <div class="rumus">
+        <p>rumus luas segitiga:</p>
+      </div>
+      <div>
+        <img src="images/1704116706724.png" />
+      </div>
+      <div class="rumus">
+        <p>rumus keliling segitiga:</p>
+      </div>
+      <div>
+        <img class="keliling" src="images/1704116774460.png" />
+      </div>
+    </header>
+    <main class="inputkan-luas">
+      <label for="input-tinggi" id="inputan-tinggi"> Tinggi </label>
+      <input
+        placeholder="Masukkan ukuran tinggi"
+        type="number"
+        id="input-tinggi"
+        class="tinggi-input"
+      />
+      <label for="input-alas" id="inputan-alas"> Alas </label>
+      <input
+        placeholder="Masukkan ukuran alas"
+        type="number"
+        id="input-alas"
+        class="alas-input"
+      />
+      <div class="button">
+        <button class="hitung-button">Hitung</button>
+        <button class="reset-button">Reset</button>
+      </div>
     </main>
   </body>
 </html>
