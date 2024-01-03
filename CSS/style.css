@@ -35,17 +35,27 @@ img {
   width: 330px;
 }
 .rumus {
+  margin-top: 10px;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: capitalize;
   font-style: oblique;
+  text-align: center;
 }
-.inputkan-luas {
+
+#inputkan-luas {
+  text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+#inputkan-keliling {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 label {
   margin-bottom: 4px;
-
   font-weight: bold;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -82,10 +92,16 @@ label {
 .button {
   display: flex;
   align-self: center;
-  gap: 70px;
-  margin-top: 20px;
+  gap: 20px;
+  margin-top: 1px;
+  justify-content: center;
 }
-.hitung-button {
+#hitung-button {
+  display: flex;
+  align-self: center;
+  gap: 20px;
+  margin-top: 1px;
+  justify-content: center;
   background-color: rgb(65, 81, 255);
   color: white;
   padding: 5px 15px;
@@ -93,7 +109,20 @@ label {
   border: none;
   cursor: pointer;
 }
-.reset-button {
+#hitung-button1 {
+  display: flex;
+  align-self: center;
+  gap: 20px;
+  margin-top: 1px;
+  justify-content: center;
+  background-color: rgb(65, 81, 255);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+#reset-button {
   background-color: rgb(255, 0, 0);
   color: white;
   padding: 5px 15px;
@@ -101,20 +130,165 @@ label {
   border: none;
   cursor: pointer;
 }
-.hitung-button:hover {
+.button {
+  display: flex;
+  align-self: center;
+  gap: 20px;
+  margin-top: 1px;
+  justify-content: center;
+}
+#luas-button {
+  background-color: rgb(65, 81, 255);
+  color: white;
+  padding: 15px 100px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+#keliling-button {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  padding: 15px 100px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+#luas-button:hover {
   background-color: rgb(34, 40, 169);
 }
-.hitung-button:active {
+#luas-button:active {
+  background-color: rgb(7, 3, 94);
+  transform: translateY(-5px);
+}
+#keliling-button:hover {
+  background-color: rgb(171, 18, 18);
+}
+#keliling-button:active {
+  background-color: rgb(121, 8, 8);
+  transform: translateY(-5px);
+}
+#hitung-button:hover {
+  background-color: rgb(34, 40, 169);
+}
+#hitung-button:active {
   background-color: rgb(7, 3, 94);
   transform: translateY(5px);
 }
-.reset-button:hover {
+#hitung-button1:hover {
+  background-color: rgb(34, 40, 169);
+}
+#hitung-button1:active {
+  background-color: rgb(7, 3, 94);
+  transform: translateY(5px);
+}
+#reset-button:hover {
   background-color: rgb(171, 18, 18);
 }
-.reset-button:active {
+#reset-button:active {
   background-color: rgb(121, 8, 8);
   transform: translateY(5px);
 }
 .keliling {
   width: 500px;
+}
+input {
+  margin: 10px auto;
+  text-align: left;
+  width: 500px;
+}
+#headjudul {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  margin-left: 20px;
+}
+#inputkan-luas {
+  display: none;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#inputkan-keliling {
+  display: none;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+label {
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#inputan-sisi3 {
+  margin-top: 9px;
+}
+
+#inputan-sisi3 {
+  margin-top: 14px;
+}
+
+.sisi3-input {
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  border-color: rgb(29, 73, 233);
+}
+
+.sisi3-input:focus {
+  border-color: rgb(255, 29, 29);
+}
+
+#inputan-sisi2 {
+  margin-top: 9px;
+}
+
+#inputan-sisi2 {
+  margin-top: 14px;
+}
+
+.sisi2-input {
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  border-color: rgb(29, 73, 233);
+}
+
+.sisi2-input:focus {
+  border-color: rgb(255, 29, 29);
+}
+#inputan-sisi1 {
+  margin-top: 9px;
+}
+
+#inputan-sisi1 {
+  margin-top: 14px;
+}
+
+.sisi1-input {
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  border-color: rgb(29, 73, 233);
+}
+
+.sisi1-input:focus {
+  border-color: rgb(255, 29, 29);
+}
+#hasil-itung {
+  font-family: "Times New Roman", Times, serif;
+}
+#head {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#hasil-luas {
+  margin: auto;
+  display: none;
+  width: 600px;
+}
+#hasil-keliling {
+  display: none;
+  width: 600px;
+  margin: auto;
 }
