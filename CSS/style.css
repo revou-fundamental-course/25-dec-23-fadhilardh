@@ -292,3 +292,18 @@ label {
   width: 600px;
   margin: auto;
 }
+#footer {
+  padding: 20px;
+}
+#footerbawah {
+  display: block;
+  text-transform: capitalize;
+  font-size: 12px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 0%;
+  background-color: rgb(26, 137, 255);
+  padding: 24px;
+  margin: 0% auto 24px auto;
+  color: aliceblue;
+}
